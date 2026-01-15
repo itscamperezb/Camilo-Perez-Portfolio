@@ -4,10 +4,18 @@ function Header() {
   return (
     <div id="header">
       <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Experience</li>
-        <li>Contact</li>
+        <a>
+          <li>Home</li>
+        </a>
+        <a>
+          <li>Projects</li>
+        </a>
+        <a>
+          <li>Experience</li>
+        </a>
+        <a>
+          <li>Contact</li>
+        </a>
       </ul>
     </div>
   );

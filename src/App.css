@@ -8,18 +8,51 @@
 
 #header {
   background-color: var(--card-color);
-  color: var(--primary-color);
-  padding: 20px;
-}
-#header ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  justify-content: center;
 }
 
-#header ul li {
-  cursor: pointer;
+#header ul {
+  display: flex;
+  justify-content: Center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  color: var(--primary-color);
+  list-style: none;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+}
+
+.photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#profileInfo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  color: var(--primary-color);
+
+  justify-items: center;
+}
+
+#profileInfo p {
+  height: auto;
+  width: 50%;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.icon {
+  height: 40px;
+  width: auto;
+}
+
+.iconContainer {
+  display: flex;
+  gap: 20px;
 }

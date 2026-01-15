@@ -15,8 +15,8 @@ function App() {
       <Header />
       <ProfileInfo />
       <ExperienceIcons />
-      <Experience />
       <Projects />
+      <Experience />
       <Footer />
     </div>
   );
