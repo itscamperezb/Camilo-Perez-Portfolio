@@ -1,5 +1,7 @@
 import React, { useStae } from "react";
 import "../App.css";
+import Button from "@mui/material/Button";
+
 function ProfileInfo() {
   return (
     <div id="profileInfo">
@@ -12,8 +14,10 @@ function ProfileInfo() {
         temporibus ratione aliquam earum deserunt.
       </p>
       <div ClassName="botones">
-        <button>Get in touch</button>
-        <button>Download CV</button>
+        <Button>Get in touch</Button>
+        <Button variant="contai ned" color="#5badff">
+          Download CV
+        </Button>
       </div>
     </div>
   );

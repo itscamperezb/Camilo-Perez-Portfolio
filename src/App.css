@@ -9,7 +9,13 @@
 #header {
   background-color: var(--card-color);
 }
-
+.CardMedia {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: var(--card-color);
+}
 #header ul {
   display: flex;
   justify-content: Center;
@@ -55,4 +61,27 @@
 .iconContainer {
   display: flex;
   gap: 20px;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+}
+
+.projects-grid {
+  display: grid;
+
+  width: 100%;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 30px;
 }
