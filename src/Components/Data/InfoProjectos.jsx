@@ -10,6 +10,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
+
 const projects = [
   {
     id: 1,
@@ -82,7 +83,7 @@ function Projectos() {
             <CardMedia
               component="img"
               alt={project.title}
-              height="140"
+              height="200"
               image={project.image}
             />
             <Typography
@@ -95,7 +96,11 @@ function Projectos() {
             </Typography>
             <Typography
               variant="body4"
-              sx={{ textAlign: "center", color: "white", padding: "10px" }}
+              sx={{
+                textAlign: "center",
+                color: "white",
+                padding: "10px",
+              }}
             >
               {project.description}
             </Typography>

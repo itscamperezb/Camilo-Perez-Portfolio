@@ -1,4 +1,3 @@
-import React, { useStae } from "react";
 import "../App.css";
 import Button from "@mui/material/Button";
 

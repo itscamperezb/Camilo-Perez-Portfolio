@@ -1,4 +1,3 @@
-import React, { useStae } from "react";
 import "../App.css";
 import reactLogo from "../assets/react.svg";
 import js from "../assets/javascript.svg";
