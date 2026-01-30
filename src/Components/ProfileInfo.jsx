@@ -13,7 +13,7 @@ function ProfileInfo() {
         nulla, cumque voluptatem atque sapiente tempora accusantium beatae
         temporibus ratione aliquam earum deserunt.
       </p>
-      <div ClassName="botones">
+      <div className="botones">
         <Button>Get in touch</Button>
         <Button variant="contai ned" color="#5badff">
           Download CV
