@@ -2,113 +2,113 @@ import "@/App.css";
 import t11 from "@/assets/T11Catalog.png";
 import simonDice from "@/assets/Simon_Dice.png";
 import Jobify from "@/assets/jobifyApp.png";
-import { Link } from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
+import KeeperApp from "@/assets/MyKeeperApp.png";
+import TicTacToe from "@/assets/Tic-Tac-Toe.png";
+import reactLogo from "@/assets/react.svg";
+import js from "@/assets/javascript.svg";
+import css from "@/assets/css_old.svg";
+import html from "@/assets/html5.svg";
+import nextjs from "@/assets/nextjs_icon_dark.svg";
+import node from "@/assets/nodejs.svg";
+import git from "@/assets/git.svg";
+import tailwind from "@/assets/tailwind.svg";
 
 const projects = [
   {
+    key: 1,
     id: 1,
     title: "Online Catalog Perfumes T11",
     description: "Online perfume catalog for a barbershop in Barranquilla ",
-    tech: ["html", "CSS"],
+    tech: ["html", "CSS", "git"],
+    techIcons: [html, css, git],
     image: t11,
     github: "https://github.com/usuario/portfolio",
     demo: "https://itscamperezb.github.io/T11PERFUMES/",
   },
   {
+    key: 2,
     id: 2,
     title: "SIMON DICE GAME",
     description: "Online version of Simon Says Game",
-    tech: ["js", "nodejs"],
+    tech: ["js", "nodejs", "git"],
+    techIcons: [js, node, git],
     image: simonDice,
     github: "https://github.com/usuario/portfolio",
-    demo: "https://portfolio.com",
+    demo: "https://itscamperezb.github.io/Simon-Dice-Game/",
   },
 
   {
+    key: 3,
     id: 3,
     title: "Jobify App",
-    description: "Personal App project",
-    tech: ["React", "js", "NextJs", "Css", "Tailwind"],
+    description: "Full stack Mobile App development with Jobify Team",
+    tech: ["React", "js", "NextJs", "Css", "Tailwind", "git"],
+    techIcons: [reactLogo, js, nextjs, css, tailwind, git],
     image: Jobify,
     github: "https://github.com/usuario/portfolio",
-    demo: "https://portfolio.com",
+    demo: "https://github.com/jobifyhq/jobify-webapp",
   },
   {
+    key: 4,
     id: 4,
     title: "Keeper App",
     description: "A basic keeper App to save information online",
-    tech: ["React", "CSS", "Vite", "html"],
-    image: "/project1.png",
-    github: "https://github.com/usuario/portfolio",
-    demo: "https://portfolio.com",
+    tech: ["React", "CSS", "Vite", "html", "git"],
+    techIcons: [reactLogo, css, git],
+    image: KeeperApp,
+    github: "https://itscamperezb.github.io/MyKeeperApp/",
+    demo: "https://itscamperezb.github.io/MyKeeperApp/",
   },
   {
+    key: 5,
     id: 5,
-    title: "To Do List",
-    description: "A basic Personal To Do list",
-    tech: ["Recat", "Vite", "CSS", "html"],
-    image: "/project1.png",
+    title: "Tic-Tac-Toe Game",
+    description: "A basic Tic-Tac-Toe Game",
+    tech: ["React", "Vite", "CSS", "html", "git"],
+    techIcons: [reactLogo, css, git],
+    image: TicTacToe,
     github: "https://github.com/usuario/portfolio",
-    demo: "https://portfolio.com",
+    demo: "https://github.com/itscamperezb",
   },
 ];
 
 function Projectos() {
   return (
-    <div className="projects-grid">
+    <div className="grid grid-cols-3 gap-4 p-4 w-full max-sm:grid-cols-1 max-lg:grid-cols-2">
       {projects.map((project) => (
-        <Card
-          key={project.id}
-          sx={{
-            backgroundColor: "#2a2a2a",
-            width: "100%",
-            borderRadius: "10px",
-            transition: "all 0.3s ease",
-            "&:hover": {
-              backgroundColor: "#333",
-              transform: "translateY(-4px)",
-              boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
-              cursor: "pointer",
-            },
-          }}
-        >
-          <CardActionArea className="CardMedia">
-            <CardMedia
-              component="img"
-              alt={project.title}
-              height="200"
-              image={project.image}
-            />
-            <Typography
-              gutterBottom
-              variant="h5"
-              component="div"
-              sx={{ color: "white", padding: "10px" }}
+        <div key={project.key}>
+          <a href={project.demo}>
+            <div
+              className="bg-(--card-color) m-2 p-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer h-full"
+              key={project.id}
             >
-              {project.title}
-            </Typography>
-            <Typography
-              variant="body4"
-              sx={{
-                textAlign: "center",
-                color: "white",
-                padding: "10px",
-              }}
-            >
-              {project.description}
-            </Typography>
-            <CardActions>
-              <Button size="small">VISITAR</Button>
-            </CardActions>
-          </CardActionArea>
-        </Card>
+              <div className="justify-items-center">
+                <img
+                  className="h-52 object-cover w-full"
+                  src={project.image}
+                  alt={project.title}
+                />
+              </div>
+
+              <h1 className="text-lg text-center font-bold m-4 text-white">
+                {project.title}
+              </h1>
+              <div className="flex justify-around">
+                <p className="w-[70%] text-white">{project.description}</p>
+                <div className="grid grid-cols-2 gap-4">
+                  {project.techIcons.map((icon, index) => (
+                    <img
+                      key={index}
+                      src={icon}
+                      alt={project.tech[index]}
+                      className="w-6 h-6"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       ))}
     </div>
   );

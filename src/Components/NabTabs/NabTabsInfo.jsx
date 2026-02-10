@@ -45,7 +45,7 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ placeSelf: "center", width: "80%" }}>
+    <Box sx={{ placeSelf: "center", width: "100%" }}>
       <Box
         sx={{ placeSelf: "center", borderBottom: 1, borderColor: "divider" }}
       >
@@ -54,18 +54,54 @@ export default function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab sx={{ color: "white" }} label="PROJECTS" {...a11yProps(0)} />
-          <Tab sx={{ color: "white" }} label="EXPERIENCE" {...a11yProps(1)} />
-          <Tab sx={{ color: "white" }} label="CONTACT" {...a11yProps(2)} />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="PROJECTS"
+            {...a11yProps(0)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="EXPERIENCE"
+            {...a11yProps(1)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="CONTACT"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </Box>
-      <CustomTabPanel sx={{ placeSelf: "center" }} value={value} index={0}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={0}
+      >
         <Projects />
       </CustomTabPanel>
-      <CustomTabPanel sx={{ placeSelf: "center" }} value={value} index={1}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={1}
+      >
         <Experience />
       </CustomTabPanel>
-      <CustomTabPanel sx={{ placeSelf: "center" }} value={value} index={2}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={2}
+      >
         <Contact />
       </CustomTabPanel>
     </Box>

@@ -6,9 +6,11 @@ import Experience from "./Components/NabTabs/Experience.jsx";
 import ExperienceIcons from "./Components/ExperienceIcons.jsx";
 import ProfileInfo from "./Components/ProfileInfo.jsx";
 import NavTabsInfo from "./Components/NabTabs/NabTabsInfo.jsx";
+import { motion } from "motion/react";
+
 function App() {
   return (
-    <div className="App">
+    <div className="w-full overflow-auto">
       <Header />
       <ProfileInfo />
       <ExperienceIcons />
