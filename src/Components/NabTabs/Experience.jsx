@@ -17,16 +17,16 @@ const experience = [
   {
     id: 2,
     name: "Jobify",
-    role: "Full Stack Web Developer",
-    description: "Experience in Full Stack Development",
-    years: "1 years",
+    role: "Freelance Front End Web Developer",
+    description: "Front end web developer for a new local StarUp",
+    years: "4 months",
     logo: JobifyLogo,
   },
   {
     id: 3,
     name: "Freelance",
     role: "Virtual Assistant",
-    description: "Experience in building websites for clients",
+    description: "Brand Development",
     years: "1 year",
     logo: UpWork,
   },
@@ -50,7 +50,7 @@ const experience = [
 
 function Experience() {
   return (
-    <div id="experience" className="experience-card">
+    <div id="experience" className="experience-card ">
       <h1 className="text-4xl font-bold text-center mb-8">Experience</h1>
 
       {experience.map((exp) => (
@@ -61,7 +61,7 @@ function Experience() {
               alt={exp.name}
               className="w-20 h-20 object-contain mb-2"
             />
-            <h2 className="text-2xl font-bold">{exp.name}</h2>
+            <h2 className="text-2xl font-bold max-sm:hidden ">{exp.name}</h2>
           </div>
           <ul className="w-2/5">
             <li className="text-blue-500">{exp.role}</li>

@@ -10,6 +10,10 @@ const transition = {
   ease: [0, 0.71, 0.2, 1.01],
 };
 
+const homeInfo = {
+  h1: "Front End Web developer",
+  p: " Front End Web Developer focused on building modern, responsive, and high-quality web applications. Passionate about continuous learning, clean code, and creating real digital solutions.",
+};
 function ProfileInfo() {
   return (
     <div id="profileInfo">
@@ -21,14 +25,8 @@ function ProfileInfo() {
         src={fotoProfesional}
       ></motion.img>
 
-      <h1 className="text-3xl mb-7 text-center">
-        Junior Full Stack Web developer
-      </h1>
-      <p className="w-full text-center sm:w-sm">
-        Junior Full Stack Developer focused on building modern, responsive, and
-        high-quality web applications. Passionate about continuous learning,
-        clean code, and creating real digital solutions.
-      </p>
+      <h1 className="text-3xl mb-7 text-center">{homeInfo.h1}</h1>
+      <p className="w-full text-center sm:w-sm">{homeInfo.p}</p>
       <div className="flex max-sm:flex-col">
         <a href={whatsApp}>
           <Button
