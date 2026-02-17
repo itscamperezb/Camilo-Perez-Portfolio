@@ -1,8 +1,9 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -37,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
+export default function Navtab() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -45,63 +46,38 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ placeSelf: "center", width: "100%" }}>
+    <Box sx={{ width: "100%" }}>
       <Box
-        sx={{ placeSelf: "center", borderBottom: 1, borderColor: "divider" }}
+        sx={{
+          borderBottom: 1,
+          borderColor: "divider",
+          placeSelf: "center",
+          textColor: "white",
+        }}
       >
         <Tabs
           value={value}
           onChange={handleChange}
-          aria-label="basic tabs example"
+          textColor="primary"
+          indicatorColor="primary"
+          aria-label="secondary tabs example"
+          variant="scrollable"
+          orientation="horizontal"
+          visibleScrollbar="true"
+          scrollButtons="true"
         >
-          <Tab
-            sx={{
-              color: "white",
-              "&:hover": { color: "#3b82f6" },
-              fontSize: 20,
-            }}
-            label="PROJECTS"
-            {...a11yProps(0)}
-          />
-          <Tab
-            sx={{
-              color: "white",
-              "&:hover": { color: "#3b82f6" },
-              fontSize: 20,
-            }}
-            label="EXPERIENCE"
-            {...a11yProps(1)}
-          />
-          <Tab
-            sx={{
-              color: "white",
-              "&:hover": { color: "#3b82f6" },
-              fontSize: 20,
-            }}
-            label="CONTACT"
-            {...a11yProps(2)}
-          />
+          <Tab className="text-white" label="Projects" {...a11yProps(0)} />
+          <Tab label="Experience" {...a11yProps(1)} />
+          <Tab label="Contact" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <CustomTabPanel
-        sx={{ placeSelf: "center", fontSize: "5rem" }}
-        value={value}
-        index={0}
-      >
+      <CustomTabPanel value={value} index={0}>
         <Projects />
       </CustomTabPanel>
-      <CustomTabPanel
-        sx={{ placeSelf: "center", fontSize: "5rem" }}
-        value={value}
-        index={1}
-      >
+      <CustomTabPanel value={value} index={1}>
         <Experience />
       </CustomTabPanel>
-      <CustomTabPanel
-        sx={{ placeSelf: "center", fontSize: "5rem" }}
-        value={value}
-        index={2}
-      >
+      <CustomTabPanel value={value} index={2}>
         <Contact />
       </CustomTabPanel>
     </Box>

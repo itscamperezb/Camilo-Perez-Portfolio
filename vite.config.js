@@ -5,10 +5,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "@components": path.resolve(__dirname, "./src/components"),
     },
   },
-  base: "https://itscamperezb.github.io/Camilo-Perez-Portfolio",
+
+  base: "https://itscamperezb.github.io/Camilo-Perez-Portfolio/",
 });
