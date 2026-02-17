@@ -38,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function Navtab() {
+export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -46,42 +46,65 @@ export default function Navtab() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box sx={{ placeSelf: "center", width: "100%" }}>
       <Box
-        sx={{
-          borderBottom: 1,
-          borderColor: "divider",
-          placeSelf: "center",
-          textColor: "white",
-        }}
+        sx={{ placeSelf: "center", borderBottom: 1, borderColor: "divider" }}
       >
         <Tabs
-          sx={{
-            color: "white",
-            "&:hover": { color: "#3b82f6" },
-            fontSize: 20,
-          }}
+          className="text-white w-[90%] place-self-center"
           value={value}
           onChange={handleChange}
-          textColor="primary"
-          indicatorColor="primary"
-          aria-label="secondary tabs example"
+          aria-label="basic tabs example"
           variant="scrollable"
-          visibleScrollbar="true"
-          scrollButtons="true"
         >
-          <Tab className="text-white" label="Projects" {...a11yProps(0)} />
-          <Tab label="Experience" {...a11yProps(1)} />
-          <Tab label="Contact" {...a11yProps(2)} />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="PROJECTS"
+            {...a11yProps(0)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="EXPERIENCE"
+            {...a11yProps(1)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="CONTACT"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={0}
+      >
         <Projects />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={1}
+      >
         <Experience />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
+      <CustomTabPanel
+        sx={{ placeSelf: "center", fontSize: "5rem" }}
+        value={value}
+        index={2}
+      >
         <Contact />
       </CustomTabPanel>
     </Box>

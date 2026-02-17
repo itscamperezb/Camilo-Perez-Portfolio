@@ -50,9 +50,11 @@ export default function BasicTabs() {
         sx={{ placeSelf: "center", borderBottom: 1, borderColor: "divider" }}
       >
         <Tabs
+          className="text-white w-[90%] place-self-center"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          variant="scrollable"
         >
           <Tab
             sx={{
