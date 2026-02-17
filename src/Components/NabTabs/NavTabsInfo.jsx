@@ -56,13 +56,13 @@ export default function Navtab() {
         }}
       >
         <Tabs
-          className=" w-[90%]"
+          className="place-self-center max-sm:w-[85%] sm:w-[90%] "
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
           aria-label="secondary tabs example"
           variant="scrollable"
-          scrollButtons="true"
+          scrollButtons="auto"
         >
           <Tab
             sx={{
@@ -93,13 +93,13 @@ export default function Navtab() {
           />
         </Tabs>
       </Box>
-      <CustomTabPanel value={value} index={0}>
+      <CustomTabPanel className="h-auto" value={value} index={0}>
         <Projects />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1}>
+      <CustomTabPanel className="h-auto" value={value} index={1}>
         <Experience />
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
+      <CustomTabPanel className="h-auto" value={value} index={2}>
         <Contact />
       </CustomTabPanel>
     </Box>

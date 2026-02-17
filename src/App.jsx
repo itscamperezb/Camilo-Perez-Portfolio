@@ -6,16 +6,20 @@ import Experience from "./Components/NabTabs/Experience.jsx";
 import ExperienceIcons from "./Components/ExperienceIcons.jsx";
 import ProfileInfo from "./Components/ProfileInfo.jsx";
 import NavTabsInfo from "./Components/NabTabs/NavTabsInfo.jsx";
-import { motion } from "motion/react";
+
+import { Particles } from "@/components/ui/particles";
 
 function App() {
   return (
-    <div className="w-full overflow-auto">
-      <Header />
-      <ProfileInfo />
-      <ExperienceIcons />
-      <NavTabsInfo />
-      <Footer />
+    <div>
+      <div className="relative size-full overflow-auto">
+        <Particles className="absolute -z-10 h-full place-self-center" />
+        <Header />
+        <ProfileInfo />
+        <ExperienceIcons />
+        <NavTabsInfo />
+        <Footer />
+      </div>
     </div>
   );
 }

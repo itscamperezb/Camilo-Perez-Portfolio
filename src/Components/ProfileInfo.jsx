@@ -4,9 +4,8 @@ import fotoProfesional from "@/assets/FOTO PROFESIONAL.jpg";
 import CV from "@/assets/Camilo Pérez Barraza CV.pdf";
 import { motion } from "motion/react";
 import { TypingAnimation } from "@/components/ui/typing-animation";
-import { Globe } from "@/components/ui/globe";
+
 import { TextAnimate } from "@/components/ui/text-animate";
-import { RetroGrid } from "@/components/ui/retro-grid";
 
 const whatsApp = "https://wa.me/573005239992";
 const transition = {
@@ -58,7 +57,6 @@ function ProfileInfo() {
           </Button>
         </a>
       </div>
-      <RetroGrid />
     </div>
   );
 }
