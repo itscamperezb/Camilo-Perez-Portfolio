@@ -56,14 +56,12 @@ export default function Navtab() {
         }}
       >
         <Tabs
+          className=" w-[90%]"
           value={value}
           onChange={handleChange}
-          textColor="primary"
           indicatorColor="primary"
           aria-label="secondary tabs example"
           variant="scrollable"
-          orientation="horizontal"
-          visibleScrollbar="true"
           scrollButtons="true"
         >
           <Tab className="text-white" label="Projects" {...a11yProps(0)} />
