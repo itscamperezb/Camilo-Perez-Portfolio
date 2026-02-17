@@ -64,9 +64,33 @@ export default function Navtab() {
           variant="scrollable"
           scrollButtons="true"
         >
-          <Tab className="text-white" label="Projects" {...a11yProps(0)} />
-          <Tab label="Experience" {...a11yProps(1)} />
-          <Tab label="Contact" {...a11yProps(2)} />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="Projects"
+            {...a11yProps(0)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="Experience"
+            {...a11yProps(1)}
+          />
+          <Tab
+            sx={{
+              color: "white",
+              "&:hover": { color: "#3b82f6" },
+              fontSize: 20,
+            }}
+            label="Contact"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
