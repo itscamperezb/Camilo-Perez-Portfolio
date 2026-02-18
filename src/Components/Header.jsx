@@ -3,7 +3,7 @@ const whatsApp = "https://wa.me/573005239992";
 
 function Header() {
   return (
-    <div id="header">
+    <div id="header" className="text-md">
       <ul>
         <a href="#profileInfo">
           <li>Profile</li>

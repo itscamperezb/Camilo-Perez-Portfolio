@@ -74,7 +74,7 @@ const projects = [
 
 function Projectos() {
   return (
-    <div className="grid grid-cols-3 gap-4 p-4 w-full max-sm:grid-cols-1 max-lg:grid-cols-2">
+    <div className=" grid grid-cols-3 gap-4 p-4 w-full max-sm:grid-cols-1 max-lg:grid-cols-2">
       {projects.map((project) => (
         <div key={project.key}>
           <a href={project.demo}>
@@ -90,11 +90,13 @@ function Projectos() {
                 />
               </div>
 
-              <h1 className="text-lg text-center font-bold m-4 text-white">
+              <h1 className="text-xl text-center font-bold m-4 text-white">
                 {project.title}
               </h1>
               <div className="flex justify-around">
-                <p className="w-[70%] text-white">{project.description}</p>
+                <p className="w-[70%] text-white text-2xl">
+                  {project.description}
+                </p>
                 <div className="grid grid-cols-2 gap-4">
                   {project.techIcons.map((icon, index) => (
                     <img

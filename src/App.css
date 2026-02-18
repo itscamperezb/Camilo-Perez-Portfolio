@@ -82,10 +82,12 @@ html {
 #profileInfo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   padding: 60px;
   color: var(--primary-color);
   justify-items: center;
+  height: auto;
 }
 
 #profileInfo p {

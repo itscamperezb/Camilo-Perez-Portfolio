@@ -44,16 +44,19 @@ const icons = [
 ];
 function ExperienceIcons() {
   const hoverBlueShadow =
-    "flex place-content-center items-center h-20 w-20 rounded-full hover:shadow-blue-500/100 hover:shadow-lg transition-shadow duration-300";
+    "flex place-self-center aspect-square place-content-center h-auto w-4/5 rounded-full hover:shadow-blue-500/100 hover:shadow-lg transition-shadow duration-300";
   return (
     <div className="flex flex-col items-center mb-12 gap-8">
       <h2 className="text-4xl text-white">Experience with</h2>
       <div className="w-full flex justify-center">
-        <div className="justify-items-center grid grid-cols-8 gap-8 w-3/4 p-4 max-sm:grid-cols-4">
+        <div className="grid sm:grid-cols-8 size-3/4 p-4 max-sm:grid-cols-4">
           {icons.map((item) => {
             return (
               <div key={item.id} className={hoverBlueShadow}>
-                <img src={item.icon} className="h-15 w-auto"></img>
+                <img
+                  src={item.icon}
+                  className="h-3/4 w-auto place-self-center"
+                ></img>
               </div>
             );
           })}
