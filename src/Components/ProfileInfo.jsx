@@ -30,7 +30,7 @@ function ProfileInfo() {
         src={fotoProfesional}
       ></motion.img>
 
-      <TypingAnimation className="text-3xl mb-7 text-center">
+      <TypingAnimation className="text-4xl mb-7 text-center">
         {homeInfo.h1}
       </TypingAnimation>
       <TextAnimate className="w-full text-center sm:w-sm">
