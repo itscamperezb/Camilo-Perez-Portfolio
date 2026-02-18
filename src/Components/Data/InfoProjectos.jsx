@@ -67,8 +67,8 @@ const projects = [
     tech: ["React", "Vite", "CSS", "html", "git"],
     techIcons: [reactLogo, css, git],
     image: TicTacToe,
-    github: "https://github.com/usuario/portfolio",
-    demo: "https://github.com/itscamperezb",
+    github: "https://itscamperezb.github.io/TIC-TAC-TOE/",
+    demo: "https://itscamperezb.github.io/TIC-TAC-TOE/",
   },
 ];
 

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -93,13 +92,13 @@ export default function Navtab() {
           />
         </Tabs>
       </Box>
-      <CustomTabPanel className="h-auto" value={value} index={0}>
+      <CustomTabPanel value={value} index={0}>
         <Projects />
       </CustomTabPanel>
-      <CustomTabPanel className="h-auto" value={value} index={1}>
+      <CustomTabPanel value={value} index={1}>
         <Experience />
       </CustomTabPanel>
-      <CustomTabPanel className="h-auto" value={value} index={2}>
+      <CustomTabPanel value={value} index={2}>
         <Contact />
       </CustomTabPanel>
     </Box>
