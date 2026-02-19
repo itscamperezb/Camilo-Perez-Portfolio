@@ -21,7 +21,7 @@ const homeInfo = {
 function ProfileInfo() {
   return (
     <div id="profileInfo">
-      <div className="h-100 w-100 flex justify-center my-8">
+      <div className="max-sm:w-[80%] sm:size-[40%] md:size-[20%] flex mx-auto my-8 aspect-square ">
         <motion.img
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -38,19 +38,18 @@ function ProfileInfo() {
       <TypingAnimation className="text-4xl mb-7 text-center">
         {homeInfo.h1}
       </TypingAnimation>
-      <TextAnimate className="w-full text-center text-2xl sm:w-sm md:w-xl">
+      <TextAnimate className="w-full text-center text-xl sm:w-sm md:w-xl">
         {homeInfo.p}
       </TextAnimate>
-      <div className="flex max-sm:flex-col max-sm:items-center max-sm:w-full h-30 w-full max-sm:h-auto justify-around gap-7 my-14">
+      <div className="flex  max-sm:flex-col max-sm:items-center max-sm:w-full h-30 w-full max-sm:h-auto justify-around gap-7 my-14">
         <a
           href={whatsApp}
-          className="max-sm:w-full sm:w-1/3 md:w-1/4 2xl:w-1/6"
+          className="flex justify-center items-center max-sm:w-full sm:w-1/3 md:w-1/4 2xl:w-1/6"
         >
           <Button
-            className="size-full"
+            className="size-3/4"
             sx={{
-              padding: "0.5rem",
-              fontSize: "1.5em",
+              fontSize: "1.2em",
               ":hover": { border: "1px solid #3b82f6" },
             }}
             variant="outlined"
@@ -61,12 +60,12 @@ function ProfileInfo() {
         <a
           href={CV}
           download
-          className="max-sm:w-full sm:w-1/3 md:w-1/4 2xl:w-1/6"
+          className="flex justify-center items-center max-sm:w-full sm:w-1/3 md:w-1/4 2xl:w-1/6"
         >
           <Button
-            className="size-full"
+            className="size-3/4"
             sx={{
-              fontSize: "1.5em",
+              fontSize: "1.2em",
               ":hover": { border: "1px solid #3b82f6" },
             }}
             variant="outlined"

@@ -68,7 +68,7 @@ export default function Navtab() {
             sx={{
               color: "white",
               "&:hover": { color: "#3b82f6" },
-              fontSize: 30,
+              fontSize: 25,
             }}
             label="Projects"
             {...a11yProps(0)}
@@ -77,7 +77,7 @@ export default function Navtab() {
             sx={{
               color: "white",
               "&:hover": { color: "#3b82f6" },
-              fontSize: 30,
+              fontSize: 25,
             }}
             label="Experience"
             {...a11yProps(1)}
@@ -86,7 +86,7 @@ export default function Navtab() {
             sx={{
               color: "white",
               "&:hover": { color: "#3b82f6" },
-              fontSize: 30,
+              fontSize: 25,
             }}
             label="Contact"
             {...a11yProps(2)}

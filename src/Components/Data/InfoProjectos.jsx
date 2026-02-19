@@ -12,7 +12,8 @@ import nextjs from "@/assets/nextjs_icon_dark.svg";
 import node from "@/assets/nodejs.svg";
 import git from "@/assets/git.svg";
 import tailwind from "@/assets/tailwind.svg";
-
+import ViteLogo from "@/assets/vite.svg";
+import InvestmentCalculator from "@/assets/InvestmentCalculator.png";
 const projects = [
   {
     key: 1,
@@ -54,7 +55,7 @@ const projects = [
     title: "Keeper App",
     description: "A basic keeper App to save information online",
     tech: ["React", "CSS", "Vite", "html", "git"],
-    techIcons: [reactLogo, css, git],
+    techIcons: [reactLogo, css, git, ViteLogo],
     image: KeeperApp,
     github: "https://itscamperezb.github.io/MyKeeperApp/",
     demo: "https://itscamperezb.github.io/MyKeeperApp/",
@@ -65,8 +66,20 @@ const projects = [
     title: "Tic-Tac-Toe Game",
     description: "A basic Tic-Tac-Toe Game",
     tech: ["React", "Vite", "CSS", "html", "git"],
-    techIcons: [reactLogo, css, git],
+    techIcons: [reactLogo, css, git, ViteLogo],
     image: TicTacToe,
+    github: "https://itscamperezb.github.io/TIC-TAC-TOE/",
+    demo: "https://itscamperezb.github.io/TIC-TAC-TOE/",
+  },
+  {
+    key: 6,
+    id: 6,
+    title: "Investment Calculatro",
+    description:
+      "An investment Calculator so the people can calculate how much money can tehy get for investing with certain interest",
+    tech: ["React", "Vite", "CSS", "html", "git"],
+    techIcons: [reactLogo, css, git, ViteLogo],
+    image: InvestmentCalculator,
     github: "https://itscamperezb.github.io/TIC-TAC-TOE/",
     demo: "https://itscamperezb.github.io/TIC-TAC-TOE/",
   },
@@ -94,7 +107,7 @@ function Projectos() {
                 {project.title}
               </h1>
               <div className="flex justify-around">
-                <p className="w-[70%] text-white text-2xl">
+                <p className="w-[70%] text-white text-md">
                   {project.description}
                 </p>
                 <div className="grid grid-cols-2 gap-4">
