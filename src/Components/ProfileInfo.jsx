@@ -15,8 +15,8 @@ const transition = {
 };
 
 const homeInfo = {
-  h1: "Front End Web developer",
-  p: "I am responsible for creating and implementing React components, hooks, managing views and information with Next.js, responsive design using tools such as Tailwind/CSS, managing libraries, frameworks, object-oriented programming, and implementing AI tools such as Claude Code. I also have experience using GIT for version control and collaborative work.",
+  h1: "Front End Web developer with knowledge on Backend",
+  p: "I am responsible for creating and implementing React components, hooks, managing views and information with Next.js, responsive design using tools such as Tailwind/CSS, managing libraries, frameworks, object-oriented programming, and implementing AI tools such as Claude Code. I also have experience integrating and consuming APIs, using GIT for version control and collaborative work, and knowledge of",
 };
 function ProfileInfo() {
   return (
