@@ -1,7 +1,7 @@
 import "../App.css";
 import Button from "@mui/material/Button";
 import fotoProfesional from "@/assets/FOTO PROFESIONAL.jpg";
-import CV from "@/assets/Camilo Pérez Barraza CV.pdf";
+import CV from "@/assets/Camilo Pérez Barraza Front-end Engineer Resume English.pdf";
 import { motion } from "motion/react";
 import { TypingAnimation } from "@/components/ui/typing-animation";
 

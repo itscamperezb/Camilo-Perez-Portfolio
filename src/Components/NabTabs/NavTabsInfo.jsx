@@ -53,10 +53,11 @@ export default function Navtab() {
           borderColor: "divider",
           placeSelf: "center",
           textColor: "white",
+          margin: "auto",
         }}
       >
         <Tabs
-          className="place-self-center max-sm:w-[85%] sm:w-[90%] "
+          className="place-self-center-safe max-sm:w-[85%] sm:w-[90%] justify-center"
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
