@@ -7,7 +7,7 @@ import nextjs from "../assets/nextjs_icon_dark.svg";
 import node from "../assets/nodejs.svg";
 import git from "../assets/git.svg";
 import tailwind from "../assets/tailwind.svg";
-
+import typeScript from "@/assets/typeScript.svg";
 const icons = [
   {
     id: 1,
@@ -19,7 +19,7 @@ const icons = [
   },
   {
     id: 3,
-    icon: css,
+    icon: typeScript,
   },
   {
     id: 4,
@@ -41,6 +41,10 @@ const icons = [
     id: 8,
     icon: tailwind,
   },
+  {
+    id: 9,
+    icon: css,
+  },
 ];
 function ExperienceIcons() {
   const hoverBlueShadow =
@@ -49,7 +53,7 @@ function ExperienceIcons() {
     <div className="flex flex-col items-center mb-12 gap-8">
       <h2 className="text-4xl text-white">Experience with</h2>
       <div className="w-full flex justify-center">
-        <div className="grid sm:grid-cols-8 size-3/4 p-4 max-sm:grid-cols-4">
+        <div className="grid sm:grid-cols-9 size-3/4 p-4 max-sm:grid-cols-4">
           {icons.map((item) => {
             return (
               <div key={item.id} className={hoverBlueShadow}>

@@ -15,6 +15,8 @@ import tailwind from "@/assets/tailwind.svg";
 import ViteLogo from "@/assets/vite.svg";
 import InvestmentCalculator from "@/assets/InvestmentCalculator.png";
 import CountDownGame from "@/assets/CountDownGame.png";
+import typeScript from "@/assets/typeScript.svg";
+import BuscaPelis from "@/assets/BuscaPelis.png";
 import { Button } from "@mui/material";
 
 const projects = [
@@ -30,9 +32,31 @@ const projects = [
     github: "https://github.com/itscamperezb/T11PERFUMES.git",
     demo: "https://itscamperezb.github.io/T11PERFUMES/",
   },
+
   {
     key: 2,
     id: 2,
+    title: "BuscaPelis",
+    description:
+      "This is an website where people can find information for more tha 1 million movies and 200.000 TV Series. This website works with TMDB API",
+    tech: [
+      "React",
+      "TypeScript",
+      "js",
+      "Vite",
+      "Css",
+      "Tailwind",
+      "git",
+      "API REST",
+    ],
+    techIcons: [reactLogo, typeScript, js, ViteLogo, tailwind, git],
+    image: BuscaPelis,
+    github: "https://github.com/itscamperezb/BuscaPelis",
+    demo: "https://itscamperezb.github.io/BuscaPelis/",
+  },
+  {
+    key: 3,
+    id: 3,
     title: "SIMON DICE GAME",
     description:
       "Online version of Simon Says Game created to apply the manipulation of arrays, using push methods, validation and conditional Styling",
@@ -43,17 +67,6 @@ const projects = [
     demo: "https://itscamperezb.github.io/Simon-Dice-Game/",
   },
 
-  {
-    key: 3,
-    id: 3,
-    title: "Jobify App",
-    description: "Full stack Mobile App in development with Jobify Team",
-    tech: ["React", "js", "NextJs", "Css", "Tailwind", "git"],
-    techIcons: [reactLogo, js, nextjs, css, tailwind, git],
-    image: Jobify,
-    github: "https://github.com/jobifyhq",
-    demo: "https://github.com/jobifyhq/jobify-webapp",
-  },
   {
     key: 4,
     id: 4,
@@ -100,6 +113,17 @@ const projects = [
     image: CountDownGame,
     github: "https://github.com/itscamperezb/CountdownGame.git",
     demo: "https://itscamperezb.github.io/CountdownGame/",
+  },
+  {
+    key: 8,
+    id: 8,
+    title: "Jobify App",
+    description: "Full stack Mobile App in development with Jobify Team",
+    tech: ["React", "js", "NextJs", "Css", "Tailwind", "git"],
+    techIcons: [reactLogo, js, nextjs, css, tailwind, git],
+    image: Jobify,
+    github: "https://github.com/jobifyhq",
+    demo: "https://github.com/jobifyhq/jobify-webapp",
   },
 ];
 
