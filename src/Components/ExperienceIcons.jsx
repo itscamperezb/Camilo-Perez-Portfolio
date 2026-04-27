@@ -8,6 +8,8 @@ import node from "../assets/nodejs.svg";
 import git from "../assets/git.svg";
 import tailwind from "../assets/tailwind.svg";
 import typeScript from "@/assets/typeScript.svg";
+import Expo from "@/assets/client.svg";
+import Supabase from "@/assets/supabase-logo-icon.svg";
 const icons = [
   {
     id: 1,
@@ -45,6 +47,14 @@ const icons = [
     id: 9,
     icon: css,
   },
+  {
+    id: 10,
+    icon: Expo,
+  },
+  {
+    id: 11,
+    icon: Supabase,
+  },
 ];
 function ExperienceIcons() {
   const hoverBlueShadow =
@@ -53,17 +63,17 @@ function ExperienceIcons() {
     <div className="flex flex-col items-center mb-12 gap-8">
       <h2 className="text-4xl text-white">Experience with</h2>
       <div className="w-full flex justify-center">
-        <div className="grid sm:grid-cols-9 size-3/4 p-4 max-sm:grid-cols-4">
-          {icons.map((item) => {
-            return (
-              <div key={item.id} className={hoverBlueShadow}>
+        <div className="flex flex-wrap justify-center size-3/4 p-4">
+          {icons.map((item) => (
+            <div key={item.id} className="flex items-center justify-center w-[calc(100%/9)] max-sm:w-1/4">
+              <div className={hoverBlueShadow}>
                 <img
                   src={item.icon}
                   className="h-3/4 w-auto place-self-center"
                 ></img>
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
       </div>
     </div>
